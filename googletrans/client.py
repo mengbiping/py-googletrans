@@ -7,7 +7,6 @@ You can translate text using this module.
 import random
 import typing
 
-import httpcore
 import httpx
 from httpx import Timeout
 
@@ -51,7 +50,7 @@ class Translator:
 
     def __init__(self, service_urls=None, user_agent=DEFAULT_USER_AGENT,
                  raise_exception=DEFAULT_RAISE_EXCEPTION,
-                 proxies: typing.Dict[str, httpcore.SyncHTTPTransport] = None,
+                 proxies: typing.Dict[str, ] = None,
                  timeout: Timeout = None,
                  http2=True):
 
